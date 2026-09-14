@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Client Testimonials | Fasikun Ayomide, Realtor</title>
+<meta name="description" content="Read what clients say about working with Fasikun Ayomide on their property investments." />
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="section-tight" style="padding-top:56px;">
+  <div class="wrap">
+    <span class="eyebrow reveal">Testimonials</span>
+    <h1 class="reveal" style="max-width:16ch;">What clients say after working with me.</h1>
+    <p class="lede reveal" style="margin-top:16px;">Real feedback from investors I've worked with — first-time buyers, diaspora clients, and repeat investors.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:16px;">
+  <div class="wrap grid-3" id="testimonialFullGrid">
+    <div style="grid-column:1/-1; color:var(--text-muted);">Loading testimonials…</div>
+  </div>
+</section>
+
+<section class="section section-ink on-ink">
+  <div class="wrap grid-2" style="align-items:center;">
+    <div class="reveal">
+      <h2>Want to be my next success story?</h2>
+      <p style="margin-top:12px;">Let's start with a conversation about your goals.</p>
+    </div>
+    <div class="reveal hero-cta" style="margin-top:0;">
+      <a href="/contact" class="btn btn-brass">Book a Consultation</a>
+      <a href="/properties" class="btn btn-outline-paper">Explore Properties</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="/js/components.js"></script>
+<script src="/js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    const mount = document.getElementById('testimonialFullGrid');
+    try {
+      const res = await fetch('/api/testimonials');
+      const data = await res.json();
+      mount.innerHTML = data.map((t) => `
+        <div class="testimonial-card reveal">
+          <p class="testimonial-quote">"${t.quote}"</p>
+          <div class="testimonial-person">
+            <div class="testimonial-avatar"><img src="${t.image}" alt="${t.name}" /></div>
+            <div>
+              <div class="testimonial-name">${t.name}</div>
+              <div class="testimonial-role">${t.role}</div>
+            </div>
+          </div>
+          <span class="tag" style="margin-top:16px;">${t.property}</span>
+        </div>
+      `).join('');
+      initReveal();
+    } catch (e) {
+      mount.innerHTML = '<p>Unable to load testimonials right now.</p>';
+    }
+  });
+</script>
+</body>
+</html>

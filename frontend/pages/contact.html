@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Book a Consultation with Fasikun Ayomide</title>
+<meta name="description" content="Book a free consultation or reach out directly via WhatsApp, phone or email." />
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="section-tight" style="padding-top:56px;">
+  <div class="wrap">
+    <span class="eyebrow reveal">Contact</span>
+    <h1 class="reveal" style="max-width:16ch;">Let's talk about your investment goals.</h1>
+    <p class="lede reveal" style="margin-top:16px;">Book a free consultation, or reach out directly — whichever is easier for you.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:16px;">
+  <div class="wrap grid-2">
+
+    <div class="reveal">
+      <div class="form-success" id="formSuccess">Thank you — your message has been received. I'll respond within 24 hours, or reach out on WhatsApp for a faster response.</div>
+      <form data-lead-form>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="phoneOrEmail">Phone number or email</label>
+          <input type="text" id="phoneOrEmail" name="phoneOrEmail" required placeholder="080X XXX XXXX or you@email.com" />
+        </div>
+        <div class="field">
+          <label for="interest">What are you interested in?</label>
+          <select id="interest" name="interest">
+            <option value="General enquiry">General enquiry</option>
+            <option value="Free consultation">Booking a free consultation</option>
+            <option value="Oluyole Modern Market">Oluyole Modern Market</option>
+            <option value="Mowe Prime">Mowe Prime</option>
+            <option value="Bankole Estate, Magboro">Bankole Estate, Magboro</option>
+            <option value="Something else">Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me a bit about what you're looking for — budget, timeline, or goals."></textarea>
+        </div>
+        <button type="submit" class="btn btn-brass btn-block">Send Message</button>
+        <a href="#" class="btn btn-whatsapp btn-block" style="margin-top:12px;" data-wa-followup onclick="window.open(this.href || waLink(), '_blank'); return false;">Or message me directly on WhatsApp</a>
+        <p class="form-note">Consultations are free. I typically respond within a few hours during business days.</p>
+      </form>
+    </div>
+
+    <div class="reveal">
+      <div style="border:1px solid var(--line); padding:32px 28px;">
+        <div style="display:flex; gap:16px; align-items:center; margin-bottom:22px; padding-bottom:22px; border-bottom:1px solid var(--line);">
+          <div class="portrait-frame-sm">
+            <img src="/images/profile.jpg" alt="Fasikun Ayomide, Realtor" />
+          </div>
+          <div>
+            <div style="font-family:var(--font-display); font-size:1.05rem;">Fasikun Ayomide</div>
+            <div style="font-size:0.82rem; color:var(--text-muted);">Realtor &amp; Investment Advisor</div>
+          </div>
+        </div>
+        <span class="eyebrow">Direct Contact</span>
+        <div class="value-row" style="grid-template-columns:24px 1fr; padding:18px 0;">
+          <span class="value-icon" style="font-size:1rem;">—</span>
+          <div><h4 style="margin:0; font-size:0.95rem;">WhatsApp</h4><a id="waDirectLink" href="#" target="_blank" rel="noopener" style="color:var(--brass); font-weight:700;">Chat now</a></div>
+        </div>
+        <div class="value-row" style="grid-template-columns:24px 1fr; padding:18px 0; border-top:1px solid var(--line);">
+          <span class="value-icon" style="font-size:1rem;">—</span>
+          <div><h4 style="margin:0; font-size:0.95rem;">Phone</h4><a id="phoneLink" href="#">—</a></div>
+        </div>
+        <div class="value-row" style="grid-template-columns:24px 1fr; padding:18px 0; border-top:1px solid var(--line);">
+          <span class="value-icon" style="font-size:1rem;">—</span>
+          <div><h4 style="margin:0; font-size:0.95rem;">Email</h4><a id="emailLink" href="#">—</a></div>
+        </div>
+        <div class="value-row" style="grid-template-columns:24px 1fr; padding:18px 0; border-top:1px solid var(--line);">
+          <span class="value-icon" style="font-size:1rem;">—</span>
+          <div><h4 style="margin:0; font-size:0.95rem;">Instagram</h4><a id="igLink" href="#" target="_blank" rel="noopener">Follow along</a></div>
+        </div>
+      </div>
+
+      <div style="margin-top:24px; border:1px solid var(--line); padding:28px 26px; background:var(--paper-dim);">
+        <h3>Prefer to book a time directly?</h3>
+        <p style="margin-top:10px; font-size:0.92rem;">If you already know you'd like a consultation, book a slot that works for you and I'll confirm within a few hours.</p>
+        <a href="#" id="bookingLink" class="btn btn-outline-ink btn-block" style="margin-top:12px;">Book a Time</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="/js/components.js"></script>
+<script src="/js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('waDirectLink').href = waLink();
+    document.getElementById('phoneLink').href = 'tel:' + CONFIG.phone.replace(/\s/g, '');
+    document.getElementById('phoneLink').textContent = CONFIG.phone;
+    document.getElementById('emailLink').href = 'mailto:' + CONFIG.email;
+    document.getElementById('emailLink').textContent = CONFIG.email;
+    document.getElementById('igLink').href = CONFIG.instagram;
+    document.getElementById('bookingLink').href = CONFIG.calendlyUrl;
+  });
+</script>
+</body>
+</html>

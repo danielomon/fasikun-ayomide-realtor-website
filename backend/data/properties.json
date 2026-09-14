@@ -1,0 +1,107 @@
+[
+  {
+    "id": "oluyole-modern-market",
+    "name": "Oluyole Modern Market",
+    "location": "New Garage Axis (After Challenge), Ibadan",
+    "type": "Commercial Shop Units",
+    "status": "Selling Fast",
+    "priceFrom": 6450000,
+    "currency": "NGN",
+    "sizes": [
+      { "size": "Standard — Upstairs", "price": 6450000 },
+      { "size": "Standard — Downstairs", "price": 7525000 },
+      { "size": "Platinum — Upstairs", "price": 17125000 },
+      { "size": "Platinum — Downstairs", "price": 18200000 }
+    ],
+    "paymentPlan": "Standard units: initial deposit of ₦1,000,000, balance in instalments. Platinum units: initial deposit of ₦2,000,000, balance in instalments. Pricing is all-inclusive — what you see is what you pay, with no hidden charges added later.",
+    "documentation": "Documentation is handled by the developer, Land Republic. I'll walk you through the current title status and paperwork timeline during your consultation before you commit to anything.",
+    "heroImage": "/images/properties/oluyole-1.jpg",
+    "gallery": [
+      "/images/properties/oluyole-1.jpg",
+      "/images/properties/oluyole-2.jpg"
+    ],
+    "features": [
+      "Modern market shop units with upstairs and downstairs options",
+      "Two unit categories — Standard and Platinum — to fit different budgets",
+      "All-inclusive pricing with no hidden charges",
+      "Flexible initial deposit plans",
+      "Over 120 units already taken up by investors"
+    ],
+    "locationAdvantages": [
+      "Directly on the New Garage axis, after Challenge — one of Ibadan's busiest commercial corridors",
+      "High daily foot traffic from surrounding residential and transport hubs",
+      "Established market catchment area with existing customer demand"
+    ],
+    "investmentPotential": "This is a commercial income play rather than a land bank — shop units in an established, high-traffic market corridor are built for rental income and resale demand from day one, not just long-term appreciation. Over 120 buyers taking up units is itself a signal of confidence in this location.",
+    "inspection": "Site inspections can be arranged to see the ongoing construction and confirm current unit availability — contact me directly to schedule.",
+    "summary": "Modern market shop units on Ibadan's busy New Garage axis — built for commercial income, with flexible Standard and Platinum categories."
+  },
+  {
+    "id": "mowe-prime",
+    "name": "Mowe Prime",
+    "location": "Mowe, Ofada Axis, Ogun State",
+    "type": "Residential Land",
+    "status": "Now Selling",
+    "priceFrom": 8000000,
+    "currency": "NGN",
+    "sizes": [
+      { "size": "Standard — 300 sqm", "price": 8000000 },
+      { "size": "Premium — 500 sqm", "price": 15000000 }
+    ],
+    "paymentPlan": "Flexible instalment plans are available. I'll confirm current terms with you directly, since these are occasionally updated by the developer.",
+    "documentation": "Documentation is handled by the developer, Land Republic. Current title status and paperwork details are confirmed with every client before purchase.",
+    "heroImage": "/images/properties/mowe-1.jpg",
+    "gallery": [
+      "/images/properties/mowe-1.jpg",
+      "/images/properties/mowe-2.jpg",
+      "/images/properties/mowe-3.jpg"
+    ],
+    "features": [
+      "Gated estate development",
+      "Standard (300 sqm) and Premium (500 sqm) plot options",
+      "Estate entrance and perimeter structures already completed",
+      "Positioned for investors buying locally or remotely"
+    ],
+    "locationAdvantages": [
+      "Sits along the Mowe, Ofada axis in Ogun State — a growing corridor bordering Lagos",
+      "More accessible entry price point than core Lagos corridors, while remaining commutable",
+      "Developer-backed estate with visible on-ground progress, not just a paper plan"
+    ],
+    "investmentPotential": "Ogun State's Mowe/Ofada corridor has become one of the more accessible entry points for investors priced out of core Lagos axes, while still sitting within commuting distance of Lagos. Early estate infrastructure — the gatehouse and perimeter walls — is already in place, which is typically a positive signal for development pace ahead.",
+    "inspection": "Site visits can be arranged in person, or by video for clients buying from outside Nigeria — contact me directly to schedule.",
+    "summary": "A gated residential development in the Mowe/Ofada corridor of Ogun State, positioned for investors buying locally or from abroad."
+  },
+  {
+    "id": "bankole-estate-magboro",
+    "name": "Bankole Estate, Magboro",
+    "location": "Favour Davies Street, Magboro, Ogun State",
+    "type": "Residential Land (Half Plot)",
+    "status": "Last Plot Available",
+    "priceFrom": 40000000,
+    "currency": "NGN",
+    "sizes": [
+      { "size": "Half Plot", "price": 40000000 }
+    ],
+    "paymentPlan": "Full payment structure is available on request — contact me directly to discuss what works for you.",
+    "documentation": "Registered Survey and Deed of Assignment.",
+    "heroImage": "/images/properties/magboro-1.jpg",
+    "gallery": [
+      "/images/properties/magboro-1.jpg",
+      "/images/properties/magboro-2.jpg"
+    ],
+    "features": [
+      "Gated and secured estate with code-access security system",
+      "Reliable electricity supply for modern living",
+      "Interlocked, well-paved and clean internal roads",
+      "Serene, well-planned neighbourhood with strong existing infrastructure"
+    ],
+    "locationAdvantages": [
+      "Located in the heart of Magboro, a high-demand, high-value corridor",
+      "Prime position on Favour Davies Street within the estate",
+      "Exclusive, well-established neighbourhood"
+    ],
+    "investmentPotential": "This is the last available plot on this street within the estate — a gated, secured development with roads and electricity already in place, which removes much of the usual post-purchase development wait. Property values in Magboro have been on a consistent upward trend as the area fills in.",
+    "inspection": "Contact me directly to arrange a viewing of this specific plot before it's gone.",
+    "summary": "The last available half-plot in a gated, secured Magboro estate with roads and electricity already installed — secure today, legacy tomorrow."
+  }
+]
