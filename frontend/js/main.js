@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       try {
-        const res = await fetch('/api/leads', {
+       const res = await fetch('https://fasikun-ayomide-realtor-website.onrender.com/api/leads', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload),
